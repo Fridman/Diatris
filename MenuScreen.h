@@ -4,6 +4,7 @@
 #include <SFML/Graphics.hpp>
 #include <string>
 #include "Screen.h"
+#include "buttonManager.h"
 
 /*	Menuscreen implements the screen abstract class. The idea is to create 
 	separate environments for which the entities tcan interact. For example, the
@@ -25,4 +26,7 @@ private:
 	sf::Font _font;
 	sf::Text MenuMessage;
 	sf::View screenView;
+	buttonManager buttonManager;
+	bool lClicked;
+	int mPosition[2];
 };
